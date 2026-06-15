@@ -172,54 +172,86 @@
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience" class="py-20 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Professional Experience</h2>
-                <p class="text-slate-500 mt-2">Consistent progression in high-impact Salesforce development environments</p>
+                <p class="text-slate-500 mt-2">Comprehensive breakdown of technical roles and verified business impacts</p>
             </div>
             
-            <div class="space-y-12 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-slate-200">
+            <div class="space-y-12">
                 
                 <!-- Role 1: Freelance -->
-                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-600 border-4 border-white z-10"></div>
-                    <div class="w-full sm:w-5/12 bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm sm:text-right">
-                        <span class="text-xs font-semibold text-brand-600 font-bold uppercase">Dec 2025 – Present</span>
-                        <h3 class="text-lg font-bold text-slate-900 mt-1">Freelance Salesforce QA Consultant</h3>
-                        <p class="text-sm font-medium text-slate-500 mb-4">Self-Employed / Remote</p>
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            Deliver project-based validation, functional system analysis, and comprehensive regression test execution to ensure client system deployments run smoothly and securely.
-                        </p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-3 py-1 rounded-full uppercase tracking-wider">Dec 2025 – Present</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-2">Freelance Salesforce QA Consultant</h3>
+                            <p class="text-sm font-medium text-slate-500">Self-Employed | Remote</p>
+                        </div>
+                        <div class="text-slate-400 text-3xl hidden md:block">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
                     </div>
-                    <div class="hidden sm:block w-5/12"></div>
+                    <ul class="space-y-3 text-slate-600 list-disc list-inside text-sm leading-relaxed">
+                        <li><strong>QA Support:</strong> Provide Salesforce QA consulting for global client projects, specializing in test strategy creation, manual verification, regression validation, and UAT execution.</li>
+                        <li><strong>Workflow Audits:</strong> Assist with complex Salesforce business workflow validation, defect reporting, and release readiness checks for cloud-based business applications.</li>
+                        <li><strong>Quality &amp; Stability:</strong> Support testing across various Salesforce modules and platform changes with a strict focus on system quality, long-term stability, and optimal user experience.</li>
+                        <li><strong>Migration Verification:</strong> Validate data migration scenarios, ensuring schema consistency and data integrity during platform migrations.</li>
+                    </ul>
                 </div>
 
                 <!-- Role 2: Ardira Senior -->
-                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white z-10"></div>
-                    <div class="hidden sm:block w-5/12"></div>
-                    <div class="w-full sm:w-5/12 bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm">
-                        <span class="text-xs font-semibold text-slate-500">Sep 2020 – Nov 2025</span>
-                        <h3 class="text-lg font-bold text-slate-900 mt-1">Senior Software QA Engineer &amp; Product Analyst</h3>
-                        <p class="text-sm font-medium text-slate-500 mb-4">Ardira Corporation (SurveyVista AppExchange)</p>
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            Promoted to lead QA processes and product analysis for SurveyVista, a native Salesforce AppExchange product serving over 100,000 active enterprise users.
-                        </p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2020 – Nov 2025</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-2">Senior Software QA Engineer &amp; Product Analyst</h3>
+                            <p class="text-sm font-medium text-slate-500 font-bold">Ardira Corporation (SurveyVista AppExchange Application)</p>
+                        </div>
+                        <div class="text-slate-400 text-3xl hidden md:block">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-slate-900 border-b border-slate-100 pb-2 text-sm uppercase tracking-wider text-brand-600">Core QA Engineering Achievements</h4>
+                            <ul class="space-y-3 text-slate-600 list-disc list-inside text-xs leading-relaxed">
+                                <li><strong>Framework Architecture:</strong> Architected a comprehensive manual regression suite for managed packages (SurveyVista) serving 100k+ users, reducing post-release critical bugs by <strong>45%</strong>.</li>
+                                <li><strong>Platform Validation:</strong> Executed deep-dive technical validations on complex platform components including Apex triggers, LWC, and batch classes.</li>
+                                <li><strong>Security &amp; Compliance:</strong> Owned AppExchange compliance testing for CRUD/FLS, sharing rules, and SOQL injection vulnerabilities.</li>
+                                <li><strong>Automation Strategy:</strong> Led a strategic 3-month evaluation PoC of Testsigma, AccelQ, and Provar, outlining the company's long-term automation roadmap.</li>
+                                <li><strong>Team Leadership:</strong> Mentored and onboarded junior QA engineers on advanced defect triage and bug reporting structures in Jira.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-slate-900 border-b border-slate-100 pb-2 text-sm uppercase tracking-wider text-brand-600">Hybrid Product Analyst Impact</h4>
+                            <ul class="space-y-3 text-slate-600 list-disc list-inside text-xs leading-relaxed">
+                                <li><strong>Strategic Planning:</strong> Partnered with Product Managers in backlog grooming and sprint planning, defining robust acceptance criteria to prevent defects proactively.</li>
+                                <li><strong>Root Cause Analysis:</strong> Performed deep analysis of post-release defects, identifying systemic trends that reduced customer support tickets by <strong>25%</strong>.</li>
+                                <li><strong>UAT Management:</strong> Designed end-to-end User Acceptance Testing (UAT) processes with real-time Jira dashboards to track story readiness and secure stakeholder sign-off.</li>
+                                <li><strong>Data-Driven Insights:</strong> Leveraged SQL, SOQL, and Mixpanel to perform data-driven analysis of user behavior, directly optimizing testing scopes and roadmap decisions.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Role 3: Ardira Intern -->
-                <div class="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-                    <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-slate-300 border-4 border-white z-10"></div>
-                    <div class="w-full sm:w-5/12 bg-white p-6 rounded-xl border border-slate-200/60 shadow-sm sm:text-right">
-                        <span class="text-xs font-semibold text-slate-500">Sep 2019 – Aug 2020</span>
-                        <h3 class="text-lg font-bold text-slate-900 mt-1">Salesforce Developer Intern</h3>
-                        <p class="text-sm font-medium text-slate-500 mb-4">Ardira Corporation</p>
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            Gained strong fundamental insights into Apex and LWC code structure, executing test cases in sandbox environments and managing basic migration procedures.
-                        </p>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2019 – Aug 2020</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mt-2">Salesforce Developer Intern</h3>
+                            <p class="text-sm font-medium text-slate-500">Ardira Corporation | Ahmedabad, India</p>
+                        </div>
+                        <div class="text-slate-400 text-3xl hidden md:block">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
                     </div>
-                    <div class="hidden sm:block w-5/12"></div>
+                    <ul class="space-y-3 text-slate-600 list-disc list-inside text-sm leading-relaxed">
+                        <li><strong>Technical Coding:</strong> Contributed to the development and unit testing of Apex classes and Lightning Web Components (LWC), gaining a deep, hands-on understanding of the Salesforce development lifecycle.</li>
+                        <li><strong>Test Authoring:</strong> Authored and executed detailed test cases for core platform features, including validation rules, complex workflows, and data migration scenarios across multiple sandbox environments.</li>
+                    </ul>
                 </div>
 
             </div>
@@ -240,11 +272,21 @@
                         <i class="fa-solid fa-robot"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-slate-900 text-sm">Certified AI Specialist</h3>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 3733092 (Feb 2025)</p>
+                        <h3 class="font-bold text-slate-900 text-sm">Certified Platform Administrator II</h3>
+                        <p class="text-xs text-slate-500 mt-1">Credential ID: 7334937 (Jan 2026)</p>
                     </div>
                 </div>
                 <!-- Cert 2 -->
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">Certified AI Specialist</h3>
+                        <p class="text-xs text-slate-500 mt-1">Credential ID: 5733092 (Feb 2025)</p>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
                 <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
                     <div class="w-12 h-12 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-xl flex-shrink-0">
                         <i class="fa-solid fa-cloud"></i>
@@ -252,16 +294,6 @@
                     <div>
                         <h3 class="font-bold text-slate-900 text-sm">Certified Data Cloud Consultant</h3>
                         <p class="text-xs text-slate-500 mt-1">Credential ID: 5724162 (Jan 2025)</p>
-                    </div>
-                </div>
-                <!-- Cert 3 -->
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-xl flex-shrink-0">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-sm">Certified Advanced Administrator</h3>
-                        <p class="text-xs text-slate-500 mt-1">Verified Expert Level Administration</p>
                     </div>
                 </div>
                 <!-- Cert 4 -->
@@ -280,7 +312,7 @@
                         <i class="fa-solid fa-user-gear"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-slate-900 text-sm">Certified Administrator</h3>
+                        <h3 class="font-bold text-slate-900 text-sm">Certified Platform Administrator</h3>
                         <p class="text-xs text-slate-500 mt-1">Credential ID: 2955080 (Jan 2024)</p>
                     </div>
                 </div>
