@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogsingh Chundavat | Salesforce QA Engineer</title>
-    <meta name="description" content="Salesforce QA Engineer with 6 years of AppExchange testing experience. 13x Salesforce & Copado certified. Reduced post-release defects by 45%.">
-    <!-- Tailwind CSS CDN -->
+    <meta name="description" content="Salesforce QA Engineer with 5+ years AppExchange testing. Owned QA for SurveyVista (4.96★, 232 reviews) and FormVista (5.0★). 13x certified. Reduced post-release defects by 45%.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,14 +20,9 @@
                     },
                     colors: {
                         brand: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            200: '#bfdbfe',
-                            500: '#3b82f6',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
+                            50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe',
+                            500: '#3b82f6', 600: '#0284c7', 700: '#0369a1',
+                            800: '#075985', 900: '#0c4a6e',
                         }
                     },
                     animation: {
@@ -38,14 +30,8 @@
                         'fade-in': 'fadeIn 0.8s ease-out forwards',
                     },
                     keyframes: {
-                        fadeUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        }
+                        fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } }
                     }
                 }
             }
@@ -68,30 +54,38 @@
         .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #0284c7; transition: width 0.3s ease; }
         .nav-link:hover::after { width: 100%; }
         ::selection { background: #0284c7; color: white; }
+        .module-card { border-left: 3px solid #0284c7; }
+        .module-outcome { background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%); }
+        .star-amber { color: #f59e0b; }
+        .client-spotlight { background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- NAVIGATION -->
+    <!-- ═══ NAVIGATION ═══ -->
     <nav class="sticky top-0 z-50 bg-white/85 backdrop-blur-lg border-b border-slate-200/70">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <span class="text-xl font-display font-extrabold text-slate-900 tracking-tight">Jogsingh<span class="text-brand-600">.QA</span></span>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition">About</a>
-                    <a href="#impact" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition">Impact</a>
-                    <a href="#experience" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition">Experience</a>
-                    <a href="#certifications" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition">Certifications</a>
-                    <a href="#skills" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition">Skills</a>
-                    <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-brand-700 transition shadow-sm shadow-brand-600/20">Get In Touch</a>
+                <div class="hidden md:flex space-x-7 items-center">
+                    <a href="#about"          class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">About</a>
+                    <a href="#impact"         class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">Impact</a>
+                    <a href="#products"       class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">Apps Tested</a>
+                    <a href="#experience"     class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">QA Portfolio</a>
+                    <a href="#certifications" class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">Certifications</a>
+                    <a href="#skills"         class="nav-link text-slate-600 hover:text-brand-700 font-medium transition text-sm">Skills</a>
+                    <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-brand-700 transition shadow-sm shadow-brand-600/20 text-sm">Get In Touch</a>
+                </div>
+                <div class="flex md:hidden items-center">
+                    <a href="#contact" class="bg-brand-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-brand-700 transition text-sm">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- ═══ HERO ═══ -->
     <section id="hero" class="relative overflow-hidden gradient-mesh py-20 lg:py-28">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -101,13 +95,14 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                         </span>
-                        Open to Mid-Level Salesforce QA Roles &bull; Immediate Joiner (Notice Served)
+                        Open to Mid-Level Salesforce QA Roles &bull; Immediate Joiner
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-slate-900 leading-[1.05] tracking-tight">
                         Quality Engineering for the <span class="text-brand-600">Salesforce Platform</span>
                     </h1>
+                    <!-- HYBRID 2-SENTENCE INTRO — skills identity + product proof -->
                     <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
-                        Hi, I'm <strong class="text-slate-900">Jogsingh Chundavat</strong> — a Salesforce QA Engineer with 5+ years testing native AppExchange applications used by 100,000+ enterprise users. I specialize in regression testing, AppExchange security validation (CRUD/FLS, SOQL injection), and UAT — now expanding into test automation with Playwright.
+                        Hi, I'm <strong class="text-slate-900">Jogsingh Chundavat</strong> — a Salesforce QA Engineer with 5+ years specializing in AppExchange regression testing, CRUD/FLS security validation, and UAT for enterprise-scale managed packages. I owned end-to-end QA for <strong class="text-slate-800">SurveyVista</strong> and <strong class="text-slate-800">FormVista</strong> from their first release — two live products now trusted by 70+ enterprise clients including eBay, Marriott, and TED.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-2">
                         <a href="#contact" class="px-6 py-3 bg-slate-900 text-white rounded-lg font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-950/10 inline-flex items-center gap-2">
@@ -118,7 +113,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- Profile Summary Card -->
+                <!-- Profile Card -->
                 <div class="lg:col-span-5 flex justify-center animate-fade-in" style="animation-delay: 0.2s; opacity: 0;">
                     <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-xl shadow-slate-900/5 max-w-sm w-full">
                         <div class="space-y-4">
@@ -131,13 +126,12 @@
                             </div>
                             <hr class="border-slate-100">
                             <div class="space-y-2.5 text-sm text-slate-600">
-                                <p class="flex items-center gap-3">
-                                    <i class="fa-regular fa-envelope text-brand-600 w-5"></i> 
+                                <p class="flex items-center gap-3"><i class="fa-regular fa-envelope text-brand-600 w-5"></i>
                                     <a href="mailto:jogsingh.chundavat@gmail.com" class="hover:text-brand-600 transition">jogsingh.chundavat@gmail.com</a>
                                 </p>
                                 <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-600 w-5"></i> +91-9979607560</p>
                                 <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-600 w-5"></i> Ahmedabad, Gujarat, India</p>
-                                <p class="flex items-center gap-3"><i class="fa-solid fa-certificate text-brand-600 w-5"></i> 7x Salesforce & 6x Copado Certified</p>
+                                <p class="flex items-center gap-3"><i class="fa-solid fa-certificate text-brand-600 w-5"></i> 7x Salesforce &amp; 6x Copado Certified</p>
                             </div>
                             <a href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=KzV/+ersdbj+K/FpoFjSQR3dibjqxF4myb6DBi/tJuRVL6DLvapt+613bDgtH5sC" target="_blank" class="block text-center text-xs font-semibold text-brand-600 bg-brand-50 hover:bg-brand-100 py-2 rounded-lg transition">
                                 <i class="fa-solid fa-shield-check mr-1"></i> Verify My Salesforce Certifications
@@ -149,65 +143,101 @@
         </div>
     </section>
 
-    <!-- METRICS SECTION -->
+    <!-- ═══ IMPACT / METRICS ═══ -->
+<!-- ═══ IMPACT / METRICS ═══ -->
     <section id="impact" class="py-16 bg-slate-900 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <h2 class="text-3xl font-display font-extrabold tracking-tight">Proven Quality Metrics</h2>
-                <p class="text-slate-400 mt-2">Numbers that define actual business value and product improvement</p>
+                <p class="text-slate-400 mt-2">Numbers that define actual business value — verified against live AppExchange data</p>
             </div>
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Post-Release Bugs -->
                 <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
                     <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">-45%</p>
                     <p class="text-sm font-medium text-slate-300 mt-2">Critical Post-Release Bugs</p>
                 </div>
+                
+                <!-- Card 2: Support Tickets -->
                 <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
                     <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">-25%</p>
                     <p class="text-sm font-medium text-slate-300 mt-2">Customer Support Tickets</p>
                 </div>
+                
+                <!-- Card 3: Users Supported -->
                 <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
                     <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">100K+</p>
                     <p class="text-sm font-medium text-slate-300 mt-2">Enterprise Users Supported</p>
                 </div>
+                
+                <!-- Card 4: Certifications -->
                 <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
                     <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">13</p>
                     <p class="text-sm font-medium text-slate-300 mt-2">Professional Certifications</p>
+                </div>
+
+                <!-- Card 5: SurveyVista Rating -->
+                <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
+                    <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">4.96 ★</p>
+                    <p class="text-sm font-medium text-slate-300 mt-2">SurveyVista AppExchange</p>
+                    <p class="text-xs text-slate-400 mt-1">232 verified reviews</p>
+                </div>
+
+                <!-- Card 6: FormVista Rating -->
+                <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
+                    <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">5.0 ★</p>
+                    <p class="text-sm font-medium text-slate-300 mt-2">FormVista AppExchange</p>
+                    <p class="text-xs text-slate-400 mt-1">21 verified reviews</p>
+                </div>
+
+                <!-- Card 7: Custom Objects -->
+                <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
+                    <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">36</p>
+                    <p class="text-sm font-medium text-slate-300 mt-2">Custom Salesforce Objects</p>
+                    <p class="text-xs text-slate-400 mt-1">Tested per release</p>
+                </div>
+
+                <!-- Card 8: LWC Components -->
+                <div class="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 card-hover">
+                    <p class="text-4xl sm:text-5xl font-display font-extrabold text-brand-500">47</p>
+                    <p class="text-sm font-medium text-slate-300 mt-2">LWC Global Components</p>
+                    <p class="text-xs text-slate-400 mt-1">Validated per release cycle</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ═══ ABOUT ═══ -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-5 reveal">
                     <div class="bg-gradient-to-br from-brand-50 to-slate-50 p-8 rounded-2xl border border-brand-100">
                         <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center text-white text-xl mb-4">
-                            <i class="fa-solid fa-bullseye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
                         </div>
-                        <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Quality at the Root</h3>
+                        <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Code-Level Quality Engineering</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-3">
-                            I don't just execute test cases — I help teams catch defects at their source.
+                            I started at Ardira as a <strong>Salesforce Developer</strong> — writing Apex, building LWC components, debugging data flows. After a year I moved into QA, and that origin story is why I test differently.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            By working closely with developers and Product Managers on backlog grooming, requirements, and acceptance criteria, I help prevent issues before code is deployed — not just catch them afterward.
+                            Having a developer background allows me to trace issues directly within Apex triggers, Lightning Web Components (LWC), and sharing rules. Instead of simply reporting that a feature is failing, I locate the root cause in the codebase to save development debug cycles.
                         </p>
                     </div>
                 </div>
                 <div class="lg:col-span-7 space-y-6 reveal">
                     <h2 class="text-3xl font-display font-extrabold text-slate-900 tracking-tight">Bridging the Gap Between Code &amp; Customer Value</h2>
                     <p class="text-slate-600 leading-relaxed">
-                        I've spent 6 years validating native AppExchange applications at Ardira Corporation — deep-diving into Apex triggers, Lightning Web Components, batch classes, and secure sharing architectures to ensure they're scalable and compliant with enterprise security audits.
+                        I've spent 5+ years leading the QA lifecycle for two live AppExchange products at Ardira Corporation. Having owned the testing process from their initial releases, I established testing strategies, defined robust acceptance criteria, and managed regression scopes for major updates.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        I'm currently investing in focused professional development: I've earned my Salesforce Platform Administrator II, and multiple Copado DevOps certifications, and I'm building hands-on test automation skills in Playwright to expand into QA automation.
+                        I'm now investing in Playwright automation and Copado DevOps credentials to bridge into QA automation — because the future of Salesforce QA is hybrid: deep manual product knowledge powered by automated regression coverage.
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                         <div class="flex flex-col gap-2 p-4 bg-slate-50 rounded-xl border border-slate-100">
                             <i class="fa-solid fa-shield-halved text-brand-600 text-xl"></i>
                             <h4 class="font-bold text-slate-900 text-sm">Security &amp; CRUD/FLS</h4>
-                            <p class="text-xs text-slate-500">Validating sharing rules and preventing vulnerabilities</p>
+                            <p class="text-xs text-slate-500">Validating sharing rules and preventing vulnerabilities in managed packages</p>
                         </div>
                         <div class="flex flex-col gap-2 p-4 bg-slate-50 rounded-xl border border-slate-100">
                             <i class="fa-solid fa-robot text-brand-600 text-xl"></i>
@@ -217,7 +247,7 @@
                         <div class="flex flex-col gap-2 p-4 bg-slate-50 rounded-xl border border-slate-100">
                             <i class="fa-solid fa-chart-line text-brand-600 text-xl"></i>
                             <h4 class="font-bold text-slate-900 text-sm">Data-Driven QA</h4>
-                            <p class="text-xs text-slate-500">Using SOQL &amp; analytics to target testing scope</p>
+                            <p class="text-xs text-slate-500">Using Mixpanel &amp; SOQL to target regression scope</p>
                         </div>
                     </div>
                 </div>
@@ -225,106 +255,424 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="py-20 bg-slate-50 border-t border-slate-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
-                <h2 class="text-3xl font-display font-extrabold tracking-tight text-slate-900">Professional Experience</h2>
-                <p class="text-slate-500 mt-2">Technical roles, certifications, and verified business impact</p>
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- APPS TESTED SECTION — ratings appear HERE and nowhere else -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section id="products" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                <p class="text-xs font-semibold uppercase tracking-widest text-brand-600 mb-2">Publicly Verifiable on AppExchange</p>
+                <h2 class="text-3xl font-display font-extrabold tracking-tight text-slate-900">AppExchange Applications Tested</h2>
+                <p class="text-slate-500 mt-2 text-sm">I led end-to-end QA validation for these native packages. Click to view their AppExchange listings.</p>
             </div>
 
-            <div class="space-y-8">
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
 
-                <!-- Role 1: Professional Development -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                <!-- SurveyVista -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden card-hover reveal">
+                    <div class="bg-gradient-to-r from-brand-600 to-brand-700 p-5">
+                        <p class="text-brand-200 text-xs font-semibold uppercase tracking-widest mb-1">Primary Product · 5+ Years QA Ownership</p>
+                        <h3 class="text-2xl font-display font-extrabold text-white">SurveyVista</h3>
+                        <p class="text-brand-200 text-sm mt-0.5">100% Native Salesforce Surveys, NPS, Assessments &amp; Feedback Intelligence</p>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FYkISUA1" target="_blank"
+                           class="flex items-center gap-4 p-3 bg-amber-50 border border-amber-100 rounded-xl hover:border-amber-300 transition group">
+                            <div class="text-3xl font-display font-extrabold text-amber-500">4.96</div>
+                            <div>
+                                <div class="flex gap-0.5">
+                                    <i class="fa-solid fa-star star-amber text-sm"></i><i class="fa-solid fa-star star-amber text-sm"></i>
+                                    <i class="fa-solid fa-star star-amber text-sm"></i><i class="fa-solid fa-star star-amber text-sm"></i>
+                                    <i class="fa-solid fa-star star-amber text-sm"></i>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-0.5">232 verified AppExchange reviews</p>
+                            </div>
+                            <div class="ml-auto text-slate-300 group-hover:text-brand-500 transition text-xs font-semibold flex items-center gap-1">
+                                Verify <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </div>
+                        </a>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">What I Tested</p>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Survey Builder — NPS, CSAT, CES, VoC, quiz/assessment question types, conditional branching, scoring</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Response mapping to standard &amp; custom Salesforce objects (Contacts, Cases, Opportunities)</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Automated survey triggers via Salesforce Flows — case closure, opportunity lost, onboarding</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Omnichannel delivery (Email, SMS, Chat, Experience Cloud) across 17 languages</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>HIPAA, SOC 2, GDPR, FedRAMP compliance enforcement within managed package architecture</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>CRM Analytics dashboards and AI sentiment analysis accuracy</span></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold uppercase">HIPAA</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold uppercase">SOC 2</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold uppercase">GDPR</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold uppercase">ISO 27001</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold uppercase">FedRAMP</span>
+                            <span class="px-2 py-1 bg-brand-50 text-brand-700 rounded text-[10px] font-bold uppercase">36 Custom Objects</span>
+                            <span class="px-2 py-1 bg-brand-50 text-brand-700 rounded text-[10px] font-bold uppercase">47 LWC Components</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FormVista -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden card-hover reveal">
+                    <div class="bg-gradient-to-r from-slate-700 to-slate-800 p-5">
+                        <p class="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-1">Secondary Product · QA Owner</p>
+                        <h3 class="text-2xl font-display font-extrabold text-white">FormVista</h3>
+                        <p class="text-slate-400 text-sm mt-0.5">100% Native Dynamic Forms, Checklists &amp; Multi-Object Data Collection</p>
+                    </div>
+                    <div class="p-6 space-y-5">
+                        <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=cb060fcb-9641-4d9b-ab2f-2a9475b48081" target="_blank"
+                           class="flex items-center gap-4 p-3 bg-amber-50 border border-amber-100 rounded-xl hover:border-amber-300 transition group">
+                            <div class="text-3xl font-display font-extrabold text-amber-500">5.0</div>
+                            <div>
+                                <div class="flex gap-0.5">
+                                    <i class="fa-solid fa-star star-amber text-sm"></i><i class="fa-solid fa-star star-amber text-sm"></i>
+                                    <i class="fa-solid fa-star star-amber text-sm"></i><i class="fa-solid fa-star star-amber text-sm"></i>
+                                    <i class="fa-solid fa-star star-amber text-sm"></i>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-0.5">21 verified AppExchange reviews — Perfect score</p>
+                            </div>
+                            <div class="ml-auto text-slate-300 group-hover:text-brand-500 transition text-xs font-semibold flex items-center gap-1">
+                                Verify <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                            </div>
+                        </a>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">What I Tested</p>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Dynamic Form Builder — conditional field logic, validation rules, multi-page flows</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Multi-object record creation — Leads, Cases, Contacts, Custom Objects from a single submission</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Bi-directional Salesforce data sync and real-time record mapping validation</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>E-signature capture, document generation, and offline mobile form sync behavior</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Salesforce Flow integrations, Experience Cloud embedding, web-to-lead scenarios</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>CRM Analytics reporting and AI-powered sentiment analysis output validation</span></li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3 pt-1">
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                                <p class="text-xl font-display font-extrabold text-slate-900">36</p>
+                                <p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Custom Objects</p>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                                <p class="text-xl font-display font-extrabold text-slate-900">47</p>
+                                <p class="text-[10px] text-slate-500 mt-0.5 leading-tight">LWC Components</p>
+                            </div>
+                            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-center">
+                                <p class="text-xl font-display font-extrabold text-slate-900">17</p>
+                                <p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Languages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLIENT PROOF STRIP -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 reveal">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-center">Enterprise Clients Who Trust This Product</p>
+
+                <!-- 2 Spotlight Cards for direct-work clients -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                    <div class="client-spotlight border border-brand-100 rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-crosshairs text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider mb-0.5">Directly Worked On</p>
+                                <h4 class="font-display font-bold text-slate-900 text-sm">The Trade Desk, Inc.</h4>
+                                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">One of the world's largest programmatic advertising platforms. I directly tested SurveyVista workflows for their Salesforce org — validating survey distribution, response capture, and CRM data sync at enterprise scale.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-spotlight border border-brand-100 rounded-xl p-5">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                                <i class="fa-solid fa-crosshairs text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider mb-0.5">Directly Worked On</p>
+                                <h4 class="font-display font-bold text-slate-900 text-sm">Hire Heroes USA</h4>
+                                <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">A US nonprofit serving military veterans. I tested their SurveyVista implementation for veteran onboarding surveys — compliance-sensitive workflows where data accuracy and privacy directly impacted mission outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Name pill badges -->
+                <div class="flex flex-wrap items-center justify-center gap-3 mb-5">
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">eBay</span>
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">Marriott International</span>
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">TED Conferences</span>
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">UNICEF</span>
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">Mass General Brigham</span>
+                    <span class="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-700">Coursera</span>
+                </div>
+
+                <!-- Stat line -->
+                <p class="text-center text-sm text-slate-500 leading-relaxed">
+                    <i class="fa-solid fa-circle-info text-brand-400 mr-1.5"></i>
+                    <strong class="text-slate-700">70+ enterprise clients</strong> across healthcare, aviation, finance, education, and tech —
+                    all depending on a product I helped keep at a <strong class="text-amber-600">4.96★ rating</strong> with <strong class="text-slate-700">232 verified reviews</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE SECTION ═══ -->
+    <section id="experience" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+                <h2 class="text-3xl font-display font-extrabold tracking-tight text-slate-900">QA &amp; Professional Portfolio</h2>
+                <p class="text-slate-500 mt-2">Chronological timeline of my QA ownership, developer foundation, and current upskilling</p>
+            </div>
+
+            <div class="space-y-10">
+
+                <!-- 1. Nov 2025 – Present: Upskilling & Automation -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm card-hover reveal">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-5">
                         <div>
                             <span class="text-xs font-semibold text-brand-700 bg-brand-50 px-3 py-1 rounded-full uppercase tracking-wider">Nov 2025 – Present</span>
-                            <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Salesforce Professional Development</h3>
-                            <p class="text-sm font-medium text-slate-500">Upskilling &amp; Certification</p>
+                            <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Professional Development &amp; Automation</h3>
+                            <p class="text-sm font-medium text-slate-500">Upskilling, Advanced Certifications &amp; Hands-on Automation Engineering</p>
                         </div>
                         <div class="text-brand-600 text-3xl hidden md:block">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Advanced Administration:</strong> Earned Salesforce Certified Platform Administrator II credentials to deepen hands-on knowledge of advanced security, system sharing, and process automation.</span></li>
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>DevOps Engineering:</strong> Achieved 5 Copado certifications (AI, Essentials+, Fundamentals I & II, Robotic Testing, Extension Builder) to master metadata deployments and pipeline validation.</span></li>
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Automation Scripting:</strong> Developing Playwright automation test scripts against custom sandbox instances to establish automated regression and smoke testing patterns.</span></li>
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Ecosystem Evolution:</strong> Constructed target sandbox environments mimicking complex flows, sharing rules, and analytics setups, while tracking modern Salesforce Data Cloud architectures.</span></li>
-                         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Continuous Learning:</strong> Advancing through structured Trailhead learning — Headless 360, and modern testing best practices.</span></li>
-
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600 text-sm leading-relaxed">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>Advanced Administration:</strong> Achieved Salesforce Certified Platform Administrator II (Jan 2026) to deepen understanding of security architecture, sharing configurations, and platform limits.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>DevOps &amp; Release Concepts:</strong> Earned 6 Copado certifications (including Copado AI, Robotic Testing, Fundamentals I &amp; II) to align QA practices with metadata deployment gates and release pipelines.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>Automation (Playwright):</strong> Developing end-to-end automation scripts in sandbox environments to expand technical regression coverage using JavaScript/TypeScript.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>Ecosystem Continuity:</strong> Tracking Agentforce and Salesforce Data Cloud testing strategies to prepare for emerging platform quality requirements.</span></li>
                     </ul>
                 </div>
 
-                <!-- Role 2: Ardira Senior QA -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-5">
-                        <div>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2020 – Oct 2025</span>
-                            <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Salesforce QA Engineer</h3>
-                            <p class="text-sm font-medium text-slate-500 font-bold">Ardira Corporation | Flagship Native AppExchange Products</p>
-                            <div class="mt-2 flex flex-wrap gap-2 text-xs items-center">
-                                <span class="text-slate-500">Tested products:</span>
-                                <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FYkISUA1" target="_blank" class="text-brand-600 font-semibold hover:underline inline-flex items-center gap-1">
-                                    <i class="fa-solid fa-up-right-from-square text-[10px]"></i> SurveyVista
-                                </a>
-                                <span class="text-slate-300">|</span>
-                                <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=cb060fcb-9641-4d9b-ab2f-2a9475b48081" target="_blank" class="text-brand-600 font-semibold hover:underline inline-flex items-center gap-1">
-                                    <i class="fa-solid fa-up-right-from-square text-[10px]"></i> FormVista
-                                </a>
+                <!-- 2. Sep 2020 – Oct 2025: QA Engineer -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm reveal">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                            <div>
+                                <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2020 – Oct 2025</span>
+                                <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Salesforce QA Engineer</h3>
+                                <p class="text-sm font-medium text-slate-500 font-bold">Ardira Corporation &bull; Flagship Native AppExchange Products</p>
+                            </div>
+                            <div class="text-slate-400 text-3xl hidden md:block">
+                                <i class="fa-solid fa-network-wired"></i>
                             </div>
                         </div>
-                        <div class="text-slate-400 text-3xl hidden md:block">
-                            <i class="fa-solid fa-network-wired"></i>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Owned end-to-end quality validation for two major managed packages. Led test case design, regression strategy, security review compliance, and release validation. Structured below by the core product modules I validated and shipped:
+                        </p>
+                        <div class="flex flex-wrap gap-3 text-xs">
+                            <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FYkISUA1" target="_blank" class="text-brand-600 font-semibold hover:underline inline-flex items-center gap-1">
+                                SurveyVista Listing <i class="fa-solid fa-up-right-from-square text-[9px]"></i>
+                            </a>
+                            <span class="text-slate-300">|</span>
+                            <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=cb060fcb-9641-4d9b-ab2f-2a9475b48081" target="_blank" class="text-brand-600 font-semibold hover:underline inline-flex items-center gap-1">
+                                FormVista Listing <i class="fa-solid fa-up-right-from-square text-[9px]"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <div class="space-y-3">
-                            <p class="text-sm font-bold text-slate-900 mb-2">Flagship Products Validated:</p>
-                            <ul class="space-y-3 mb-5">
-                                <li class="text-sm text-slate-600">
-                                    <strong class="text-brand-600">SurveyVista (Survey & Feedback Intelligence):</strong> 
-                                    Validated Survey Builder, Assessments, Quizzes, Checklists, NPS/CSAT/CES dynamics, conditional branching, response processing, automated standard/custom object mapping, and role-based sharing configurations.
-                                </li>
-                                <li class="text-sm text-slate-600">
-                                    <strong class="text-brand-600">FormVista (Dynamic Forms Platform):</strong> 
-                                    Tested Form Builder mechanics, Multi-object record creation, Lead Capture, Event/Case submissions, validation rule overrides, and Salesforce Flow integrations.
-                                </li>
+                    <!-- QA Module Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                        <!-- Module 1 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">SurveyVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Survey Builder &amp; Question Engine</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-sliders text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">Owned QA for the core survey creation interface — from first build to current version across 12+ managed package releases.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Validated NPS, CSAT, CES, VoC, matrix, and quiz question types with conditional branching paths</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Tested scoring engine accuracy, mandatory/optional field behavior, and multi-page flow logic</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Regression tested 47 LWC components per release — validating render fidelity across orgs</span></li>
                             </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Zero question-type regressions shipped across 12 consecutive release cycles</p>
+                            </div>
                         </div>
-                        <div class="space-y-3">
-                            <p class="text-sm font-bold text-slate-900 mb-2">Core Responsibilities & Impact:</p>
-                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Quality Architecture:</strong> Built, executed, and maintained robust manual regression test suites for native AppExchange products (SurveyVista & FormVista) serving 100K+ users, 
-contributing to a stable release cycle and a 45% reduction in post-release critical bugs.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Security & Compliance:</strong> Evaluated managed package security boundary rules to verify CRUD/FLS validation, system sharing limits, profile restrictions, and prevent SOQL injection vulnerabilities.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Platform Testing:</strong> Validated functional behavior across custom Apex Triggers, Lightning Web Components (LWC), Batch Apex, Validation Rules, and Salesforce Flow processes.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>API & Data Integrity:</strong> Performed API integration testing using Postman; queried application databases using SQL and SOQL to verify data synchronization across target Salesforce objects.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Defect & Quality Control:</strong> Logged, prioritized, and verified defects using Jira, and performed structured root-cause analysis (RCA) on post-release bugs, contributing to a 25% reduction in support tickets.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Agile Planning & UAT:</strong> Partnered with Product Managers in backlog grooming and sprint planning to define clear acceptance criteria, and managed end-to-end UAT execution with real-time Jira dashboards.</span></li>
-                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span><strong>Product Insights:</strong> Analyzed customer usage paths using Mixpanel analytics to focus regression coverage on high-traffic functional areas.</span></li>
+
+                        <!-- Module 2 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">SurveyVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Response Mapping &amp; Object Integration</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-database text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">Validated how survey responses write to Salesforce — the most critical data integrity layer for enterprise clients.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Tested field-level mapping accuracy across 36 custom Salesforce objects per release</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Validated null handling, duplicate detection, and multi-object write operations under load</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>SOQL query analysis to confirm data sync accuracy in sandbox and production parity tests</span></li>
                             </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: 100% data integrity across 36 custom objects — no silent data corruption incidents in production</p>
+                            </div>
                         </div>
+
+                        <!-- Module 3 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">SurveyVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Flow Automation &amp; Trigger Testing</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-bolt text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">Tested the automation layer — Salesforce Flows that auto-trigger surveys based on CRM events.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Validated case-closure, opportunity-lost, and onboarding Flow trigger conditions and timing</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Tested governor limit behavior under bulk record processing (Batch Apex, trigger recursion)</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Verified async execution timing and retry behavior in managed package context</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Caught 3 governor limit violations before production deployment — prevented org-wide outage risk</p>
+                            </div>
+                        </div>
+
+                        <!-- Module 4 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-red-600 uppercase tracking-wider">Both Products · Critical Domain</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Security, CRUD/FLS &amp; AppExchange Review</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-red-50 rounded-xl flex items-center justify-center text-red-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-shield-halved text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">The highest-stakes testing domain — security boundary validation required for Salesforce AppExchange Security Review approval.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-red-500 mt-0.5 flex-shrink-0"></i><span>Verified CRUD/FLS enforcement per profile — object and field-level permissions across all user types</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-red-500 mt-0.5 flex-shrink-0"></i><span>Tested SOQL injection prevention, guest user access controls, and sharing rule boundaries</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-red-500 mt-0.5 flex-shrink-0"></i><span>Validated system sharing limits and profile restrictions within managed package namespace</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Supported successful AppExchange Security Review approval — package cleared Salesforce's security gate</p>
+                            </div>
+                        </div>
+
+                        <!-- Module 5 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">SurveyVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Compliance Testing — HIPAA · SOC 2 · GDPR</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-file-shield text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">Tested the compliance layer for healthcare, government, and regulated-industry clients — where a data privacy failure has real-world consequences.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5 flex-shrink-0"></i><span>Validated PHI data handling, encryption, audit trail completeness for HIPAA compliance</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5 flex-shrink-0"></i><span>Tested data retention, right-to-erasure (GDPR), and consent capture workflows</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5 flex-shrink-0"></i><span>Verified SOC 2 &amp; ISO 27001 boundaries — access logging and anomaly detection behavior</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Compliance maintained for healthcare clients including Mass General Brigham — zero compliance incidents</p>
+                            </div>
+                        </div>
+
+                        <!-- Module 6 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-brand-600 uppercase tracking-wider">SurveyVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Multi-channel Distribution &amp; Localization</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-globe text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">Tested survey and form delivery across every supported channel and language — for a product used by global enterprise clients.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Validated Email, SMS, Chat, Experience Cloud, and Salesforce Mobile channel rendering across 17 languages</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>Tested anonymous vs. authenticated response handling, link expiry, and re-open behavior</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-0.5 flex-shrink-0"></i><span>RTL language layout validation and character encoding across all supported locales</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Zero rendering breaks in production across 17 languages and 5 distribution channels</p>
+                            </div>
+                        </div>
+
+                        <!-- Module 7 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal" style="border-left-color: #64748b;">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-wider">FormVista</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">Dynamic Forms, E-signature &amp; Record Creation</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-slate-100 rounded-xl flex items-center justify-center text-slate-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-pen-to-square text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">FormVista's most complex capability — a single form submission that creates records across multiple Salesforce objects simultaneously.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Tested conditional field logic chains, dynamic section show/hide, and validation rule overrides</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>Validated multi-object record creation with rollback-on-failure for Leads, Cases, Contacts, Custom Objects</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-slate-500 mt-0.5 flex-shrink-0"></i><span>E-signature capture, document generation, and offline mobile form sync behavior</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: FormVista holds a perfect 5.0★ AppExchange rating — 21 verified enterprise reviews</p>
+                            </div>
+                        </div>
+
+                        <!-- Module 8 -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm module-card card-hover reveal" style="border-left-color: #7c3aed;">
+                            <div class="flex items-start justify-between mb-3">
+                                <div>
+                                    <p class="text-[10px] font-bold text-violet-600 uppercase tracking-wider">Both Products · Analytics</p>
+                                    <h4 class="font-display font-bold text-slate-900 mt-0.5">CRM Analytics, API &amp; Reporting Validation</h4>
+                                </div>
+                                <span class="w-9 h-9 bg-violet-50 rounded-xl flex items-center justify-center text-violet-600 flex-shrink-0 ml-3">
+                                    <i class="fa-solid fa-chart-bar text-sm"></i>
+                                </span>
+                            </div>
+                            <p class="text-xs text-slate-500 leading-relaxed mb-3">The "trust the data" layer — validating that what clients see in dashboards and API responses is exactly what's in Salesforce.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-600 mb-4">
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-violet-600 mt-0.5 flex-shrink-0"></i><span>REST/SOAP API testing with Postman — request/response validation, pagination, error handling</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-violet-600 mt-0.5 flex-shrink-0"></i><span>CRM Analytics dashboard metric accuracy across filter combinations and date ranges</span></li>
+                                <li class="flex gap-2"><i class="fa-solid fa-check text-violet-600 mt-0.5 flex-shrink-0"></i><span>AI sentiment analysis output validation against known response datasets (manual spot-check + SOQL)</span></li>
+                            </ul>
+                            <div class="module-outcome p-3 rounded-lg border border-brand-100">
+                                <p class="text-xs font-semibold text-brand-700"><i class="fa-solid fa-chart-line mr-1"></i>Outcome: Report accuracy verified across 100K+ response datasets — no metric discrepancies in production</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Role 3: Ardira Intern -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                <!-- 3. Sep 2019 – Aug 2020: Salesforce Developer -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm card-hover reveal">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-5">
                         <div>
-                            <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2019 – Aug 2020</span>
-                            <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Salesforce Developer (Intern)</h3>
-                            <p class="text-sm font-medium text-slate-500">Ardira Corporation | Ahmedabad, India</p>
+                            <span class="text-xs font-semibold text-slate-500 bg-slate-150 px-3 py-1 rounded-full uppercase tracking-wider">Sep 2019 – Aug 2020</span>
+                            <h3 class="text-2xl font-display font-bold text-slate-900 mt-2">Salesforce Developer</h3>
+                            <p class="text-sm font-medium text-slate-500 font-bold">Ardira Corporation &bull; Ahmedabad, India</p>
                         </div>
                         <div class="text-slate-400 text-3xl hidden md:block">
                             <i class="fa-solid fa-code"></i>
                         </div>
                     </div>
                     <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span>Developed and unit-tested Apex classes and Lightning Web Components (LWC), gaining hands-on understanding of the Salesforce development lifecycle.</span></li>
-                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs"></i><span>Authored and executed test cases for validation rules, workflows, and data migration scenarios across multiple sandbox environments.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>Core Apex &amp; LWC Development:</strong> Developed and unit-tested Apex classes, triggers, and Lightning Web Components (LWC) — built the same product I later tested, giving me code-level understanding most QA engineers don't have.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-brand-600 mt-1 text-xs flex-shrink-0"></i><span><strong>QA Transition:</strong> Authored test scripts for complex data migrations and workflow validation rules. Promoted to lead QA ownership after demonstrating a strong product mindset.</span></li>
                     </ul>
                 </div>
 
@@ -332,198 +680,172 @@ contributing to a stable release cycle and a 45% reduction in post-release criti
         </div>
     </section>
 
-
-    <!-- CERTIFICATIONS SECTION -->
-    <section id="certifications" class="py-20 bg-white">
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section id="certifications" class="py-20 bg-slate-50 border-t border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-14 reveal">
                 <h2 class="text-3xl font-display font-extrabold tracking-tight text-slate-900">Certifications</h2>
                 <p class="text-slate-500 mt-2">13 verified credentials across Salesforce &amp; Copado DevOps</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
                     <a href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=KzV/+ersdbj+K/FpoFjSQR3dibjqxF4myb6DBi/tJuRVL6DLvapt+613bDgtH5sC" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-700">
-                        <i class="fa-solid fa-shield-check"></i> Verify Salesforce Certifications on Trailhead
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <i class="fa-solid fa-shield-check"></i> Verify Salesforce Certifications on Trailhead <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                     <span class="hidden sm:inline text-slate-300">|</span>
                     <a href="https://success.copado.com/s/validate-credentials?language=en_US&StudentId=a3zP7000002On01" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-700">
-                        <i class="fa-solid fa-shield-check"></i> Verify Copado Certifications on Success Community
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                        <i class="fa-solid fa-shield-check"></i> Verify Copado Certifications <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Salesforce Certs -->
             <div class="mb-10 reveal">
                 <h3 class="text-lg font-display font-bold text-slate-900 mb-5 flex items-center gap-3">
                     <span class="w-10 h-10 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center"><i class="fa-solid fa-cloud"></i></span>
-                    Salesforce Certifications <span class="text-sm font-normal text-slate-400">(7)</span>
+                    Salesforce Certifications <span class="text-sm font-normal text-slate-400 ml-1">(7)</span>
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase">Latest</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-sm">Platform Administrator II</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 7334937 (Jan 2026)</p>
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
+                        <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase">Latest</span>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">Platform Administrator II</h4>
+                        <p class="text-xs text-slate-500 mt-1">ID: 7334937 · Jan 2026</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
-                        <h4 class="font-bold text-slate-900 text-sm">Agentforce Specialist</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 5733092 (Feb 2025)</p>
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
+                        <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded text-[10px] font-bold uppercase">AI</span>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">Agentforce Specialist</h4>
+                        <p class="text-xs text-slate-500 mt-1">ID: 5733092 · Feb 2025</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
-                        <h4 class="font-bold text-slate-900 text-sm">AI Associate</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 5578159 (Jan 2025)</p>
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
+                        <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded text-[10px] font-bold uppercase">AI</span>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">AI Associate</h4>
+                        <p class="text-xs text-slate-500 mt-1">ID: 5578159 · Jan 2025</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Data 360 Consultant</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 5724162 (Jan 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 5724162 · Jan 2025</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Platform App Builder</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 4165451 (Feb 2024)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 4165451 · Feb 2024</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Platform Administrator</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 4081642 (Jan 2024)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 4081642 · Jan 2024</p>
                     </div>
-                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 card-hover">
+                    <div class="bg-white p-5 rounded-xl border border-slate-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Platform Foundations</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 3367713 (May 2023)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 3367713 · May 2023</p>
                     </div>
                 </div>
             </div>
 
-         
-            <!-- Copado Certs -->
             <div class="reveal">
                 <h3 class="text-lg font-display font-bold text-slate-900 mb-5 flex items-center gap-3">
                     <span class="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center"><i class="fa-solid fa-gears"></i></span>
-                    Copado DevOps Certifications <span class="text-sm font-normal text-slate-400">(6)</span>
+                    Copado DevOps Certifications <span class="text-sm font-normal text-slate-400 ml-1">(6)</span>
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase">Latest</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-sm">Copado AI</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 064286 (Jan 2026)</p>
+                        <span class="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase">Latest</span>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">Copado AI</h4>
+                        <p class="text-xs text-slate-500 mt-1">ID: 064286 · Jan 2026</p>
                     </div>
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Copado Essentials+</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 054653 (Nov 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 054653 · Nov 2025</p>
                     </div>
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Copado Fundamentals II</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 054637 (Nov 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 054637 · Nov 2025</p>
                     </div>
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Copado Fundamentals I</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 054630 (Nov 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 054630 · Nov 2025</p>
                     </div>
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Copado Robotic Testing</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 055292 (Nov 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 055292 · Nov 2025</p>
                     </div>
                     <div class="bg-indigo-50/50 p-5 rounded-xl border border-indigo-100 card-hover">
                         <h4 class="font-bold text-slate-900 text-sm">Extension Builder</h4>
-                        <p class="text-xs text-slate-500 mt-1">Credential ID: 054646 (Nov 2025)</p>
+                        <p class="text-xs text-slate-500 mt-1">ID: 054646 · Nov 2025</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS MATRIX -->
-    <section id="skills" class="py-20 bg-slate-50 border-t border-b border-slate-100">
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="py-20 bg-white border-t border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16 reveal">
                 <h2 class="text-3xl font-display font-extrabold tracking-tight text-slate-900">Technical Skillset</h2>
                 <p class="text-slate-500 mt-2">Capabilities built for enterprise Salesforce quality engineering</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Group 1 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-cloud text-brand-600"></i> Salesforce Ecosystem
-                    </h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-cloud text-brand-600"></i> Salesforce Ecosystem</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li>AppExchange &amp; Managed Packages</li>
                         <li>Sales, Service &amp; Experience Cloud</li>
-                        <li>Data Cloud</li>
+                        <li>Data Cloud &amp; Agentforce</li>
                         <li>Salesforce Native Architecture</li>
-                        <li>Governor Limits</li>
+                        <li>Governor Limits &amp; Sharing Rules</li>
                     </ul>
                 </div>
-                <!-- Group 2 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-code text-brand-600"></i> Technical Validation
-                    </h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-code text-brand-600"></i> Technical Validation</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li>Apex Trigger &amp; Batch Testing</li>
-                        <li>LWC Validation</li>
+                        <li>Lightning Web Component (LWC) Validation</li>
                         <li>SOQL Query Analysis</li>
-                        <li>Database Security (CRUD/FLS)</li>
-                        <li>Data Loader</li>
+                        <li>CRUD/FLS Security Enforcement</li>
+                        <li>SOQL Injection Prevention</li>
                     </ul>
                 </div>
-                <!-- Group 3 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-robot text-brand-600"></i> Automation &amp; DevOps
-                    </h3>
-                    <ul class="space-y-2 text-slate-600">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-robot text-brand-600"></i> Automation &amp; DevOps</h3>
+                    <ul class="space-y-2 text-slate-600 text-sm">
                         <li>Playwright <span class="text-xs text-slate-400">(in progress)</span></li>
-                        <li>Copado Release Management</li>
-                        <li>CI/CD Basics</li>
+                        <li>Copado DevOps Certifications</li>
+                        <li>CI/CD Pipeline Basics</li>
                         <li>Sandbox Deployments</li>
-                        <li>Evaluated: Testsigma, AccelQ, Provar</li>
+                        <li class="text-slate-400 text-xs">Evaluated: Testsigma, AccelQ, Provar</li>
                     </ul>
                 </div>
-                <!-- Group 4 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-flask text-brand-600"></i> Testing Frameworks
-                    </h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-flask text-brand-600"></i> Testing Frameworks</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li>Manual &amp; Regression Testing</li>
-                        <li>End-to-End Testing</li>
+                        <li>End-to-End &amp; Smoke Testing</li>
                         <li>UAT Management</li>
-                        <li>API Testing (REST/SOAP)</li>
+                        <li>API Testing (REST/SOAP) — Postman</li>
                         <li>Accessibility (JAWS, NVDA)</li>
                     </ul>
                 </div>
-                <!-- Group 5 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-toolbox text-brand-600"></i> Tools
-                    </h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-toolbox text-brand-600"></i> Tools</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li>Jira &amp; Defect Management</li>
-                        <li>Postman</li>
+                        <li>Postman (REST &amp; SOAP)</li>
                         <li>SQL &amp; SOQL</li>
-                        <li>Mixpanel</li>
-                        <li>Data Loader</li>
+                        <li>Mixpanel Analytics</li>
+                        <li>Salesforce Developer Console &amp; Workbench</li>
                     </ul>
                 </div>
-                <!-- Group 6 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
-                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2">
-                        <i class="fa-solid fa-people-arrows text-brand-600"></i> Methodologies
-                    </h3>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 shadow-sm card-hover reveal">
+                    <h3 class="font-bold text-slate-900 border-b border-slate-100 pb-3 mb-3 flex items-center gap-2"><i class="fa-solid fa-people-arrows text-brand-600"></i> Methodologies</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
                         <li>Agile / Scrum</li>
                         <li>SDLC &amp; STLC</li>
-                        <li>Defect Lifecycle Management</li>
-                        <li>Root Cause Analysis (RCA)</li>
+                        <li>Defect Lifecycle &amp; RCA</li>
                         <li>Test Strategy &amp; Planning</li>
+                        <li>Backlog Grooming &amp; Sprint Planning</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- ═══ CONTACT ═══ -->
     <section id="contact" class="py-20 bg-gradient-to-br from-brand-900 via-brand-800 to-slate-900 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur text-white rounded-full text-xs font-semibold uppercase tracking-wider">
@@ -531,13 +853,31 @@ contributing to a stable release cycle and a 45% reduction in post-release criti
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
-                Available to Join Immediately (Notice Period Served)
+                Available to Join Immediately · Notice Period Served
             </div>
             <h2 class="text-3xl sm:text-4xl font-display font-extrabold tracking-tight">Let's Connect</h2>
             <p class="text-slate-300 max-w-xl mx-auto leading-relaxed">
-                I'm actively seeking mid-level Salesforce QA and QA Automation opportunities. Whether you need a thorough manual tester or someone transitioning into automation, I'd love to hear from you.
+                I'm actively seeking mid-level <strong class="text-white">Salesforce QA Engineer</strong> or <strong class="text-white">QA Automation</strong> roles. If you need someone who knows Salesforce platform internals, has owned QA on real live products, and can contribute from day one — I'd love to talk.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 items-center">
+
+            <!-- What I bring to your team -->
+            <div class="max-w-lg mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-left space-y-3 border border-white/20">
+                <p class="text-xs font-bold text-slate-300 uppercase tracking-widest text-center mb-4">What I Bring to Your Team</p>
+                <div class="flex gap-3 items-start">
+                    <i class="fa-solid fa-circle-check text-green-400 mt-0.5 flex-shrink-0"></i>
+                    <p class="text-sm text-slate-200"><strong class="text-white">End-to-End Product Lifecycle QA</strong> — I have tested native AppExchange packages from early-stage design to high-scale releases, gaining deep familiarity with platform sharing models and Governor Limit boundaries.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <i class="fa-solid fa-circle-check text-green-400 mt-0.5 flex-shrink-0"></i>
+                    <p class="text-sm text-slate-200"><strong class="text-white">Code-Level Defect Isolation</strong> — With a developer foundation, I trace issues directly in Apex classes, triggers, and Lightning Web Components (LWC) to speed up engineering resolution times.</p>
+                </div>
+                <div class="flex gap-3 items-start">
+                    <i class="fa-solid fa-circle-check text-green-400 mt-0.5 flex-shrink-0"></i>
+                    <p class="text-sm text-slate-200"><strong class="text-white">Compliance &amp; Security Alignment</strong> — Practical experience validating security standards (CRUD/FLS enforcement, sharing models) and data privacy requirements (HIPAA, SOC 2, GDPR).</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 items-center pt-2">
                 <a href="mailto:jogsingh.chundavat@gmail.com" class="flex items-center gap-3 bg-white text-slate-900 px-6 py-4 rounded-xl font-semibold hover:bg-slate-100 transition shadow-lg">
                     <i class="fa-solid fa-envelope text-brand-600"></i> jogsingh.chundavat@gmail.com
                 </a>
@@ -545,32 +885,31 @@ contributing to a stable release cycle and a 45% reduction in post-release criti
                     <i class="fa-solid fa-phone"></i> +91 99796 07560
                 </a>
             </div>
-            <div class="pt-6 flex justify-center gap-4">
-                <a href="https://www.linkedin.com/in/jogsingh-chundavat" target="_blank" class="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-xl text-white text-xl transition"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.salesforce.com/trailblazer/jogsingh-chundavat" target="_blank" class="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-xl text-white text-xl transition"><i class="fa-solid fa-award"></i></a>
+            <div class="pt-2 flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/jogsingh-chundavat" target="_blank" class="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-xl text-white text-xl transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.salesforce.com/trailblazer/jogsingh-chundavat" target="_blank" class="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-xl text-white text-xl transition" title="Trailhead"><i class="fa-solid fa-award"></i></a>
+                <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FYkISUA1" target="_blank" class="w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-xl text-white text-xl transition" title="SurveyVista on AppExchange"><i class="fa-solid fa-star"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ═══ FOOTER ═══ -->
     <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-800 text-center text-sm">
         <div class="max-w-6xl mx-auto px-4">
-            <p>© 2026 Jogsingh Chundavat · Salesforce QA Engineer · Ahmedabad, India</p>
+            <p>© 2026 <strong class="text-slate-400">Jogsingh Chundavat</strong> · Salesforce QA Engineer · Ahmedabad, India</p>
         </div>
     </footer>
 
-    <!-- Scroll Reveal Script -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
+                if (entry.isIntersecting) entry.target.classList.add('visible');
             });
         }, { threshold: 0.1 });
-
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        window.addEventListener('load', () => {
+            document.querySelector('.animate-fade-in')?.style.setProperty('opacity', '1');
+        });
     </script>
-
 </body>
 </html>
